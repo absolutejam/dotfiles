@@ -1,0 +1,14 @@
+source ${HOME}/.config/zsh/env
+source ${HOME}/.config/zsh/env-secret
+source ${HOME}/.config/zsh/path
+source ${HOME}/.config/zsh/oh-my-zsh
+source ${HOME}/.config/zsh/aliases
+source ${HOME}/.config/zsh/config
+source ${HOME}/.config/zsh/nvm
+
+source <(kubectl completion zsh)
+[ -s "${NVM_DIR}/nvm.sh" ] && \. "${NVM_DIR}/nvm.sh"  # This loads nvm
+[ -s "${NVM_DIR}/bash_completion" ] && \. "${NVM_DIR}/bash_completion"  # This loads nvm bash_completion
+
+eval "$(starship init zsh)"
+

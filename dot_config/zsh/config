@@ -1,0 +1,4 @@
+# Autosuggest
+bindkey '^ ' autosuggest-accept    # ctrl + space
+bindkey '^R' history-incremental-search-backward
+

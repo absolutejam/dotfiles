@@ -1,0 +1,9 @@
+alias k=kubectl
+
+which nvim >/dev/null && alias vi=nvim
+which nvim >/dev/null && alias vim=nvim
+alias clip="xclip -sel clip"
+
+which bat >/dev/null && alias cat=bat
+which exa >/dev/null && alias ls=exa
+
