@@ -1,0 +1,37 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = false
+
+format = '''
+[┌─](bold blue) $username($status)(in $directory)$git_branch$git_commit$git_status$kubernetes$rust$package$gcloud
+[└─](bold blue) '''
+
+[status]
+symbol = '🔴'
+success_symbol = '🟢'
+format = '[$symbol$common_meaning$signal_name$maybe_int]($style) '
+map_symbol = true
+disabled = false
+
+[username]
+style_user = 'white bold'
+style_root = 'black bold'
+format = '[$user]($style) '
+disabled = false
+show_always = true
+
+[kubernetes]
+format = '[$context](dimmed green) '
+disabled = false
+
+# [kubernetes.context_aliases]
+# 'dev.local.cluster.k8s' = 'dev'
+# '.*/openshift-cluster/.*' = 'openshift'
+# 'gke_.*_(?P<var_cluster>[\w-]+)' = 'gke-$var_cluster'
+#
+# [kubernetes.user_aliases]
+# 'dev.local.cluster.k8s' = 'dev'
+# 'root/.*' = 'root'
+
+[gcloud]
+symbol = "gcp"
+format = ' [$project]($style) '
