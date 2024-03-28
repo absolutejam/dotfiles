@@ -1,0 +1,68 @@
+[core]
+	editor = nvim
+  pager = delta
+	excludesfile = /Users/jamesbooth/.gitignore_global
+
+[difftool]
+  prompt = false
+  tool = delta
+
+[mergetool]
+  prompt = false
+  tool = meld
+
+[mergetool "meld"]
+  cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+
+[difftool "meld"]
+  cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+
+[init]
+  defaultBranch = main
+
+[rerere]
+  enabled = true
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true    # use n and N to move between diff sections
+  light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+  side-by-side = true
+
+[merge]
+  conflictstyle = diff3
+
+[diff]
+	colorMoved = zebra
+
+[includeIf "gitdir:~/projects/personal/"]
+  path = ~/.gitconfigs/personal
+
+[includeIf "gitdir:~/projects/work/"]
+  path = ~/.gitconfigs/work
+
+[alias]
+  lo = log --oneline
+  tree = log --oneline --decorate --graph --all
+
+[push]
+	default = current
+	autoSetupRemote = true
+[pull]
+	rebase = true
+[user]
+	name = James Booth
+	email = james@absolutejam.co.uk
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
