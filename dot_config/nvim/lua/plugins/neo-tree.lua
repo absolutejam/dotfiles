@@ -8,5 +8,8 @@ return {
         },
       },
     },
+    filesystem = {
+      bind_to_cwd = true,
+    },
   },
 }

@@ -1,0 +1,106 @@
+rule.precedence.color=deleted,completed,active,due.today,overdue,due,blocked,blocking,keyword.,tag.,project.,scheduled,recurring,tagged,uda.
+
+################################################################################
+# General
+################################################################################
+color.active=gray on cyan
+color.recurring=on gray
+
+color.tag.next=green
+
+color.overdue=red
+color.due.today=yellow
+color.due.tomorrow=
+color.due=
+
+color.blocked=white
+color.blocking=magenta
+color.scheduled=on black
+
+color.alternate=
+color.project.none=
+
+color.tag.awaiting_review=white
+
+################################################################################
+# Reports
+################################################################################
+report.next.columns=id,priority,depends.indicator,start.age,depends,project,tags,recur,scheduled.relative,due.relative,description,urgency
+report.next.labels=ID,↗️ ,⛔,  ⌛,📋,📁,🏷️,Recur, 📅,⏰,Description,  ⚠️
+report.next.sort=start-,urgency-
+
+
+################################################################################
+# Calendar
+################################################################################
+color.calendar.today=inverse
+color.calendar.overdue=gray on red
+color.calendar.scheduled=blue
+color.calendar.weekend=bright black on bright gray
+color.calendar.weeknumber=bold black
+color.calendar.due=gray on blue
+color.calendar.due.today=gray on cyan
+color.calendar.holiday=bold blue
+
+################################################################################
+
+##+---------+
+##+ Reports +
+##+---------+
+#color.burndown.done=bold black on green
+#color.burndown.pending=black on red
+#color.burndown.started=black on yellow
+#
+#color.history.add=bold black on blue
+#color.history.delete=bright white on bold black
+#color.history.done=bold black on cyan
+#
+#color.summary.background=bright white on black
+#color.summary.bar=black on cyan
+#
+##+----------+
+##+ Calendar +
+##+----------+
+
+#
+##+---------+
+##+ General +
+##+---------+
+#color.label=
+#color.label.sort=
+#color.alternate=
+#color.header=bold magenta
+#color.footnote=yellow
+#color.warning=bold black on yellow
+#color.error=bold white on red
+#color.debug=magenta
+#
+##+-------------+
+##+ Task States +
+##+-------------+
+#color.completed=gray9
+#color.deleted=bold gray9
+#color.active=bold black on green
+#color.recurring=bold magenta
+#color.scheduled=
+#color.until=
+#color.blocking=black on yellow
+#color.blocked=bold black on yellow
+
+#color.summary.bar=white on rgb030
+#color.summary.background=white on color0
+
+#color.history.add=color0 on rgb010
+#color.history.done=color0 on rgb030
+#color.history.delete=color0 on rgb050
+
+#color.burndown.pending=on rgb010
+#color.burndown.started=on rgb030
+#color.burndown.done=on gray4
+#
+#color.sync.added=gray4
+#color.sync.changed=rgb030
+#color.sync.rejected=red
+#
+#color.undo.before=rgb031
+#color.undo.after=rgb053

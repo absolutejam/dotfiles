@@ -1,4 +1,5 @@
-# Autosuggest
-bindkey '^ ' autosuggest-accept    # ctrl + space
-bindkey '^R' history-incremental-search-backward
+#!/usr/bin/env sh
 
+# Autosuggest
+bindkey '^ ' autosuggest-accept # ctrl + space
+# bindkey '^R' history-incremental-search-backward

@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+[ -s "/opt/homebrew/opt/jabba/share/jabba/jabba.sh" ] && . "/opt/homebrew/opt/jabba/share/jabba/jabba.sh"
+
+export PATH="/opt/homebrew/opt/openjdk/bin:${PATH}"
+
+

@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # Terminal
 export EDITOR=nvim
 export TERM=xterm-256color
@@ -7,12 +9,11 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=true
 
 # Infra
 export DOCKER_BUILDKIT=1
-export COMPOSE_COMPATIBILITY=true
+export KICS_QUERIES_PATH=/opt/homebrew/opt/kics/share/kics/assets/queries
 
 # Web dev
-export NVM_DIR="${HOME}/.nvm"
-export PNPM_HOME="/home/sadbooth/.local/share/pnpm"
+export PNPM_HOME="${HOME}/.local/share/pnpm"
 export DENO_INSTALL="${HOME}/.deno"
 
-# VP
-export WILMA_APP_ROOT=${HOME}/projects/victoriaplum/victoriaplum.com
+# GPG
+export GPG_TTY=$(tty)

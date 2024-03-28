@@ -2,8 +2,8 @@
 add_newline = false
 
 format = '''
-[┌─](bold blue) $username($status)(in $directory)$git_branch$git_commit$git_status$kubernetes$rust$package$gcloud
-[└─](bold blue) '''
+($directory)($git_branch$git_commit$git_status)($kubernetes$rust$package$gcloud)($status)
+[╰─](bold blue) '''
 
 [status]
 symbol = '🔴'
@@ -20,7 +20,7 @@ disabled = false
 show_always = true
 
 [kubernetes]
-format = '[$context](dimmed green) '
+format = ' [$context](dimmed green) '
 disabled = false
 
 # [kubernetes.context_aliases]
@@ -32,6 +32,9 @@ disabled = false
 # 'dev.local.cluster.k8s' = 'dev'
 # 'root/.*' = 'root'
 
+[nodejs]
+format = 'node [$version](bold green)'
+
 [gcloud]
 symbol = "gcp"
-format = ' [$project]($style) '
+format = '( [$project]($style) )'

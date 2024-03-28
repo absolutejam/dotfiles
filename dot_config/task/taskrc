@@ -1,0 +1,19 @@
+# Use the command 'task show' to see all defaults and overrides
+
+# Files
+data.location=~/.task
+#hooks.location=~/.config/task/hooks
+
+weekstart=monday
+include ~/.config/task/catppuccin-mocha.theme
+
+# UDA
+
+uda.priority.default=M
+priority.default=M
+
+# Contexts
+
+context.work.read=(project:work or project:bench or project:dsab)
+context.work.write=project:work
+context=work

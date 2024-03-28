@@ -1,9 +1,13 @@
+#!/usr/bin/env sh
+
 alias k=kubectl
 
 which nvim >/dev/null && alias vi=nvim
 which nvim >/dev/null && alias vim=nvim
-alias clip="xclip -sel clip"
+alias clip=pbcopy
 
 which bat >/dev/null && alias cat=bat
-which exa >/dev/null && alias ls=exa
+which eza >/dev/null && alias ls=eza
 
+alias tw=taskwarrior-tui
+alias lg=lazygit
