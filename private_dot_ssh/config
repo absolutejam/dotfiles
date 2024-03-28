@@ -1,0 +1,46 @@
+#-------------------------------------------------------------------------------
+# Default to personal
+#-------------------------------------------------------------------------------
+
+Host github.com
+	Hostname github.com
+	User git
+	Identityfile ~/.ssh/id_rsa_personal
+
+Host gitlab.com
+	Hostname gitlab.com
+	User git
+	Identityfile ~/.ssh/id_rsa_personal
+
+#-------------------------------------------------------------------------------
+# Explicit personal
+#-------------------------------------------------------------------------------
+
+Host github_personal
+	Hostname github.com
+	User git
+	Identityfile ~/.ssh/id_rsa_personal
+
+Host gitlab_personal
+	Hostname gitlab.com
+	User git
+	Identityfile ~/.ssh/id_rsa_personal
+
+#-------------------------------------------------------------------------------
+# Explicit work
+#-------------------------------------------------------------------------------
+
+Host github_work
+	Hostname github.com
+	User git
+	Identityfile ~/.ssh/id_rsa_work
+
+Host gitlab_work
+	Hostname gitlab.com
+	User git
+	Identityfile ~/.ssh/id_rsa_work
+
+Host git.upmind.com
+	Hostname git.upmind.com
+	User git
+	Identityfile ~/.ssh/id_rsa_work
