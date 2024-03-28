@@ -5,12 +5,12 @@
 Host github.com
 	Hostname github.com
 	User git
-	Identityfile ~/.ssh/id_rsa_personal
+	Identityfile ~/.ssh/id_personal
 
 Host gitlab.com
 	Hostname gitlab.com
 	User git
-	Identityfile ~/.ssh/id_rsa_personal
+	Identityfile ~/.ssh/id_personal
 
 #-------------------------------------------------------------------------------
 # Explicit personal
@@ -19,12 +19,12 @@ Host gitlab.com
 Host github_personal
 	Hostname github.com
 	User git
-	Identityfile ~/.ssh/id_rsa_personal
+	Identityfile ~/.ssh/id_personal
 
 Host gitlab_personal
 	Hostname gitlab.com
 	User git
-	Identityfile ~/.ssh/id_rsa_personal
+	Identityfile ~/.ssh/id_personal
 
 #-------------------------------------------------------------------------------
 # Explicit work
@@ -33,14 +33,14 @@ Host gitlab_personal
 Host github_work
 	Hostname github.com
 	User git
-	Identityfile ~/.ssh/id_rsa_work
+	Identityfile ~/.ssh/id_work
 
 Host gitlab_work
 	Hostname gitlab.com
 	User git
-	Identityfile ~/.ssh/id_rsa_work
+	Identityfile ~/.ssh/id_work
 
 Host git.upmind.com
 	Hostname git.upmind.com
 	User git
-	Identityfile ~/.ssh/id_rsa_work
+	Identityfile ~/.ssh/id_work
